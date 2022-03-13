@@ -17,22 +17,22 @@ class PostSeeder extends Seeder
             [
                 'title' => 'BEST COLLECTION',
                 'content' => 'Aliquam purus arcu, congue a gravida ac, facilisis vel erat, Maecenas pretium sem.',
-                'featured_image' => '/img/img-3x2-01.jpg',
+                'featured_image' => '/img/favicon.png',
             ],
             [
                 'title' => 'NEW DESIGN FOR YOUR WEBSITE',
                 'content' => 'Aliquam purus arcu, congue a gravida ac, facilisis vel erat, Maecenas pretium sem.',
-                'featured_image' => '/img/img-3x2-02.jpg',
+                'featured_image' => '/img/logo.png',
             ],
             [
                 'title' => 'MOST UNIQUE IDEA EVER MADE',
                 'content' => 'Aliquam purus arcu, congue a gravida ac, facilisis vel erat, Maecenas pretium sem.',
-                'featured_image' => '/img/img-3x2-03.jpg',
+                'featured_image' => '/img/logo2.png',
             ],
             [
                 'title' => 'SIMPLE TOUCH',
                 'content' => 'Aliquam purus arcu, congue a gravida ac, facilisis vel erat, Maecenas pretium sem.',
-                'featured_image' => '/img/img-3x2-04.jpg',
+                'featured_image' => '/img/payments.png',
             ]
          ]);
     }
