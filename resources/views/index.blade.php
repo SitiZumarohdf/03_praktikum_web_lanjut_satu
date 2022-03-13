@@ -10,12 +10,13 @@
 	<!-- Title Tag  -->
     <title>Eshop - eCommerce HTML5 Template.</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="icon" t
+    ype="image/png" href="images/favicon.png">
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-	
+
 	<!-- StyleSheet -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Magnific Popup -->
@@ -36,17 +37,17 @@
     <link rel="stylesheet" href="css/owl-carousel.css">
 	<!-- Slicknav -->
     <link rel="stylesheet" href="css/slicknav.min.css">
-	
+
 	<!-- Eshop StyleSheet -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-	
-	
+
+
 </head>
 <body class="js">
-	
+
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -57,8 +58,17 @@
 		</div>
 	</div>
 	<!-- End Preloader -->
+    <div class="row-tm-welcome-row">
+        @foreach ($data as $item)
+        <article class="col-lg-6 tm-media">
+            <img src="{{$item->featured_image}}" alt="Welcome Image" class="img-fluid tm-media-img" />
+            <div class="tm-media-body">
+                <a href="#" class="tm-article-link"><h3 class="tm-articlle-title text-uppercase">{{$item->title}}
+                    <p>{{$item->content}}</p>
+                </div>
+        </article>
+        @endforeach
 
-	
 	<!-- Header -->
 	<header class="header shop">
 		<!-- Topbar -->
@@ -254,11 +264,11 @@
 							<div class="menu-area">
 								<!-- Main Menu -->
 								<nav class="navbar navbar-expand-lg">
-									<div class="navbar-collapse">	
-										<div class="nav-inner">	
+									<div class="navbar-collapse">
+										<div class="nav-inner">
 											<ul class="nav main-menu menu navbar-nav">
 													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Product</a></li>												
+													<li><a href="#">Product</a></li>
 													<li><a href="#">Service</a></li>
 													<li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
 														<ul class="dropdown">
@@ -267,7 +277,7 @@
 															<li><a href="checkout.html">Checkout</a></li>
 														</ul>
 													</li>
-													<li><a href="#">Pages</a></li>									
+													<li><a href="#">Pages</a></li>
 													<li><a href="#">Blog<i class="ti-angle-down"></i></a>
 														<ul class="dropdown">
 															<li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
@@ -278,7 +288,7 @@
 										</div>
 									</div>
 								</nav>
-								<!--/ End Main Menu -->	
+								<!--/ End Main Menu -->
 							</div>
 						</div>
 					</div>
@@ -288,7 +298,7 @@
 		<!--/ End Header Inner -->
 	</header>
 	<!--/ End Header -->
-	
+
 	<!-- Slider Area -->
 	<section class="hero-slider">
 		<!-- Single Slider -->
@@ -316,7 +326,7 @@
 		<!--/ End Single Slider -->
 	</section>
 	<!--/ End Slider Area -->
-	
+
 	<!-- Start Small Banner  -->
 	<section class="small-banner section">
 		<div class="container-fluid">
@@ -361,7 +371,7 @@
 		</div>
 	</section>
 	<!-- End Small Banner -->
-	
+
 	<!-- Start Product Area -->
     <div class="product-area section">
             <div class="container">
@@ -1715,7 +1725,7 @@
             </div>
     </div>
 	<!-- End Product Area -->
-	
+
 	<!-- Start Midium Banner  -->
 	<section class="midium-banner">
 		<div class="container">
@@ -1748,7 +1758,7 @@
 		</div>
 	</section>
 	<!-- End Midium Banner -->
-	
+
 	<!-- Start Most Popular -->
 	<div class="product-area most-popular section">
         <div class="container">
@@ -1875,7 +1885,7 @@
         </div>
     </div>
 	<!-- End Most Popular Area -->
-	
+
 	<!-- Start Shop Home List  -->
 	<section class="shop-home-list section">
 		<div class="container">
@@ -2073,7 +2083,7 @@
 		</div>
 	</section>
 	<!-- End Shop Home List  -->
-	
+
 	<!-- Start Cowndown Area -->
 	<section class="cown-down">
 		<div class="section-inner ">
@@ -2082,8 +2092,8 @@
 					<div class="col-lg-6 col-12 padding-right">
 						<div class="image">
 							<img src="https://via.placeholder.com/750x590" alt="#">
-						</div>	
-					</div>	
+						</div>
+					</div>
 					<div class="col-lg-6 col-12 padding-left">
 						<div class="content">
 							<div class="heading-block">
@@ -2095,14 +2105,14 @@
 									<div class="clearfix" data-countdown="2021/02/30"></div>
 								</div>
 							</div>
-						</div>	
-					</div>	
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- /End Cowndown Area -->
-	
+
 	<!-- Start Shop Blog  -->
 	<section class="shop-blog section">
 		<div class="container">
@@ -2154,7 +2164,7 @@
 		</div>
 	</section>
 	<!-- End Shop Blog  -->
-	
+
 	<!-- Start Shop Services Area -->
 	<section class="shop-services section home">
 		<div class="container">
@@ -2199,7 +2209,7 @@
 		</div>
 	</section>
 	<!-- End Shop Services Area -->
-	
+
 	<!-- Start Shop Newsletter  -->
 	<section class="shop-newsletter section">
 		<div class="container">
@@ -2222,7 +2232,7 @@
 		</div>
 	</section>
 	<!-- End Shop Newsletter -->
-	
+
 	<!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -2335,7 +2345,7 @@
             </div>
     </div>
     <!-- Modal end -->
-	
+
 	<!-- Start Footer Area -->
 	<footer class="footer">
 		<!-- Footer Top -->
@@ -2428,7 +2438,7 @@
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
- 
+
 	<!-- Jquery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.js"></script>
